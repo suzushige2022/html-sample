@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    　<meta charset="UTF-8" />
+    　<link rel="stylesheet" href="style.css"> 
+    　<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    　<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>サンプル</title>
+       <script type="text/javascript">
+      <!--
+         var i = 0;
+         var str = "　　　　　　　　";			// 適度に間隔を空けます
+         str += "ぐるぐるどーん";			// 実際に表示する文字
+
+function one_scroll() {
+	var flag = document.forms[0].text1.value = str.substring(i++, str.length);
+	if (flag) setTimeout("one_scroll();", 200);
+     }
+        // -->
+      </script>
+    </head>
+    <body>
+        <form action="#">
+        <input type="text" name="text1" value="">
+        <input type="button" value="表示する" onclick="one_scroll();">
+        </form>
+    </body>
+</html>
